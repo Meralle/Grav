@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/user/plugins/admin/languages/en.yaml',
-    'modified' => 1535051086,
+    'modified' => 1538491584,
     'data' => [
         'PLUGIN_ADMIN' => [
             'ADMIN_BETA_MSG' => 'This is a Beta release! Use this in production at your own risk...',
@@ -728,7 +728,19 @@ You have **2FA** enabled on this account. Please use your **2FA** app to enter t
             'STRICT_YAML_COMPAT' => 'YAML Compatibility',
             'STRICT_YAML_COMPAT_HELP' => 'Falls back to Symfony 2.4 YAML parser if Native or 3.4 parser fails',
             'STRICT_TWIG_COMPAT' => 'Twig Compatibility',
-            'STRICT_TWIG_COMPAT_HELP' => 'Enables deprecated Twig autoescape setting.  When disabled, |raw filter is required to output HTML as Twig will autoescape output'
+            'STRICT_TWIG_COMPAT_HELP' => 'Enables deprecated Twig autoescape setting.  When disabled, |raw filter is required to output HTML as Twig will autoescape output',
+            'SECURITY' => 'Security',
+            'XSS_SECURITY' => 'XSS Security',
+            'XSS_WHITELIST_PERMISSIONS' => 'Whitelist Permissions',
+            'XSS_WHITELIST_PERMISSIONS_HELP' => 'Users with these permissions will skip the XSS rules when saving content',
+            'XSS_ON_EVENTS' => 'On-events',
+            'XSS_INVALID_PROTOCOLS' => 'Enable Invalid protocols',
+            'XSS_MOZ_BINDINGS' => 'Moz bindings',
+            'XSS_HTML_INLINE_STYLES' => 'HTML inline styles',
+            'XSS_DANGEROUS_TAGS' => 'Dangerous HTML tags',
+            'XSS_DANGEROUS_TAGS_LIST' => 'Dangerous HTML tags list',
+            'XSS_ONSAVE_ISSUE' => 'Save failed: XSS issue detected...',
+            'XSS_ISSUE' => '<strong>NOTICE:</strong> Grav found potential XSS issues in <strong>%s</strong>'
         ]
     ]
 ];
