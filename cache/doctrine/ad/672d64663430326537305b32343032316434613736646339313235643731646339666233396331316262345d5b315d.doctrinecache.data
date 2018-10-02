@@ -1,0 +1,26 @@
+1539095251
+a:2:{s:7:"content";s:1241:"
+<section class="section modular-text  bg-gray">
+    <section class="container grid-lg">
+        <div class="columns right">
+            <div class="column col-6 col-md-12">
+                <h2><strong>ABHOUT SOLARTESTER</strong> product!</h2>
+<!-- No longer are you a _help captive by your CMS_. Grav **empowers** you to create anything from a [simple one-page site](https://demo.getgrav.org/onepage-skeleton?target=_blank), to a [beautiful blog](https://demo.getgrav.org/blog-skeleton?target=_blank), to a powerful and feature-rich [shop site](https://demo.getgrav.org/shop-skeleton?target=_blank), to pretty much anything you can dream up!
+[Find out more...](https://getgrav.org?classes=btn,btn-primary,btn-lg) -->
+<ul>
+<li>Über uns: Solartester </li>
+<li>Beratung Inhaber: Michael Götte</li>
+<li>Prüfung Altes Dorf 19 </li>
+<li>Service 14776 Brandenburg </li>
+<li>Gutachten  Tel.: +49 (0) 3381 -30 63 955 </li>
+<li>Fax: +49 (0) 3381 -30 63 954</li>
+<li>E-Mail: info@solartester.de</li>
+</ul>
+            </div>
+            <div class="column col-6 col-md-12">
+                                    <img alt="" src="/user/pages/01.home/03._callout/jeep.jpg" />
+                            </div>
+        </div>
+    </section>
+</section>
+";s:12:"content_meta";N;}

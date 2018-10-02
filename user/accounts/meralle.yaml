@@ -1,0 +1,11 @@
+email: mar.ha17@outlook.com
+fullname: meralle
+title: Administrator
+state: enabled
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$lW0Ab97UsHrOBt/mAdQVi.7rJD/e9B3EFpOzf4tendBBEcTItXHya

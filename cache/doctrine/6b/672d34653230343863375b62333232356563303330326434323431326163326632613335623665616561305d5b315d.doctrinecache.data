@@ -1,0 +1,12 @@
+1539092763
+a:2:{s:7:"content";s:635:"
+<section id="" class="section modular-hero hero parallax text-light " style="background-image: url(/user/pages/01.home/01._hero/pexels-photo-3.jpeg);">
+    <div class="image-overlay"></div>
+    <section class="container grid-lg" style="text-align: center">
+        <h1><strong><em>SOLARTESTER</em></strong></h1>
+<h2>Fast, Simple, Powerful...</h2>
+<p>Solartester propose fully customized solutions that would save energy and money.</p>
+<p><a href="https://learn.getgrav.org" class="btn btn-primary btn-lg" target="_blank">Read the documentation</a></p>
+    </section>
+    <i id="to-start" class="pulse fa fa-angle-down"></i>
+</section>";s:12:"content_meta";N;}
