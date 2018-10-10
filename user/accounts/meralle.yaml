@@ -4,8 +4,17 @@ title: Administrator
 state: enabled
 access:
   admin:
-    login: true
-    super: true
+    super: 'true'
+    login: 'true'
   site:
-    login: true
+    login: 'true'
 hashed_password: $2y$10$lW0Ab97UsHrOBt/mAdQVi.7rJD/e9B3EFpOzf4tendBBEcTItXHya
+language: en
+twofa_enabled: false
+twofa_secret: 3CFUGJAKAIIVYRVJINKPP2J6SQW34LSV
+avatar:
+  user/accounts/avatars/NCgLrQjpWeB1bzZ.png:
+    name: NCgLrQjpWeB1bzZ.png
+    type: image/png
+    size: 220384
+    path: user/accounts/avatars/NCgLrQjpWeB1bzZ.png
