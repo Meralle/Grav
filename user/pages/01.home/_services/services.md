@@ -10,7 +10,7 @@ services:
         title: Planning
         description: 'Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat tellus odio malesuada ex.'
         url: '#'
-        image: img-offer-2.jpg
+        image: img-offer-3.jpg
     -
         title: Analysis
         description: 'Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat tellus odio malesuada ex.'
@@ -20,9 +20,11 @@ services:
         title: Banking
         description: 'Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat tellus odio malesuada ex.'
         url: '#'
-        image: img-offer-4.jpg
-    -
-        description: hfghgfh
-        image: img-offer-33.jpg
+        image: img-offer-1.jpg
+featherlight:
+    active: true
+    openSpeed: 100
+    closeSpeed: 100
 ---
 
+![](/images/img-offer-1.jpg?cropResize=300,300)
