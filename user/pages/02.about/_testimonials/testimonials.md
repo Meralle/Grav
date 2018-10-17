@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Satisfied Customer
 slides:
     -
@@ -15,4 +15,4 @@ slides:
         name: Paulina Berger
         image: img-testimonial-3.jpg
         description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum egetvel<br>lacuspretium rhoncus a quis nisly Ut vehicula gravida dui in pulvinar donec<br>diam elit consequat eget augue vitae aliquet sollicitudin.
----
+--- -->

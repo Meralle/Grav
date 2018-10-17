@@ -9,4 +9,3 @@ columns:
         content: 'Wir stehen Ihnen gern für eine persönliche Beratung zur Verfügung um umfassend über erneuerbare Energie zu informie'
 ---
 
-![](/images/img-offer-1.jpg?cropResize=300,300)

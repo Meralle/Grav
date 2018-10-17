@@ -15,7 +15,7 @@
             <div class="col-md-6">
                 <div class="thumbnail clearfix">
                     <a href="{{ service.url }}">
-                        {{ page.media.images[service.image].html('', service.title) }}
+                        {{ page.media.images[service.image].lightbox(700,700).cropZoom(300, 200).html('', service.title) }}
                     </a>
 
                     <div class="caption">
@@ -31,3 +31,5 @@
     {% endfor %}
     </div>
 </section>
+
+{{content}}
