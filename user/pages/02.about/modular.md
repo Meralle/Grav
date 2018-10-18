@@ -8,7 +8,6 @@ content:
         custom:
             - _about
             - _skills
-            - _testimonials
             - _clients
 taxonomy:
     category:

@@ -27,6 +27,16 @@
                     <p>{{ solution.description }}</p>
                 </div>
             </div>
+            {# <figure class="thumbnail">
+                    <a href="{{ member.url }}">
+                        {{ page.media.images[member.image].html('', member.name) }}
+                    </a>
+                    <figcaption class="caption text-center">
+                        <h3>{{ member.name }} -
+                            <small>{{ member.position}}</small>
+                        </h3>
+                    </figcaption>
+            </figure> #}
         </div>
         {% if loop.index == page.header.solutions|length or loop.index % column_count == 0 %}
         </div>
