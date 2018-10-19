@@ -347,11 +347,10 @@ text-highlights
 /* ------------------------------------------------------------------
 BACK TO TOP
 --------------------------------------------------------------------- */
-#toTop {
+#toTop{
     position    : fixed;
     bottom      : 30px;
     right       : 30px;
-    color       : #31aae2;
     cursor      : pointer;
     display     : none;
     z-index     : 1;
@@ -369,9 +368,10 @@ BACK TO TOP
     border             : 1px solid transparent;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
-    -o-transition      : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s; 
     transition         : all 0.3s ease 0s;
     }
+
 
 /* ------------------------------------------------------------------
 Shortcode Content
@@ -799,16 +799,16 @@ Shortcode Content
     position       : relative;
     }
 
-.section-title span.bordered-icon {
-    color       : #dadada;
+/* .section-title span.bordered-icon {
+    color       :red;
     padding     : 0 10px;
     font-size   : 12px;
     line-height : 18px;
     position    : relative;
     display     : inline-block;
-    }
+    } */
 
-.section-title span.bordered-icon:before,
+/* .section-title span.bordered-icon:before,
 .section-title span.bordered-icon:after {
     content    : "";
     background : #dadada;
@@ -816,15 +816,15 @@ Shortcode Content
     height     : 1px;
     top        : 8px;
     position   : absolute;
-    }
+    } */
 
-.section-title span.bordered-icon:before {
+/* .section-title span.bordered-icon:before {
     left : 100%;
-    }
+    } */
 
-.section-title span.bordered-icon:after {
+/* .section-title span.bordered-icon:after {
     right : 100%;
-    }
+    } */
 
 /*---------------------------
  Service section

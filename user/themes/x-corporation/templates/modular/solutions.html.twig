@@ -18,9 +18,9 @@
         {% endif %}
         <div class="col-sm-6 col-md-{{ (12 / column_count)|round }}">
             <div class="promo-block-wrapper clearfix">
-                <div class="promo-icon">
+                {# <div class="promo-icon">
                     <i class="fa {{ solution.icon }}"></i>
-                </div>
+                </div> #}
                 <div class="promo-image">
                     {{ page.media.images[solution.image].html('',solution.title) }}
                 </div>

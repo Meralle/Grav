@@ -1,5 +1,6 @@
 ---
 title: About
+media_order: img-page-title.jpg
 content:
     items: '@self.modular'
     order:
