@@ -30,6 +30,11 @@ form:
                                     type: text
                                     label: THEME_X_CORPORATION.ADMIN.MEMBERS.URL.LABEL
                                     help: THEME_X_CORPORATION.ADMIN.MEMBERS.URL.HELP
+                                .description:
+                                    type: textarea
+                                    rows: 5
+                                    label: THEME_X_CORPORATION.ADMIN.MEMBERS.DESCRIPTION.LABEL
+                                    help: THEME_X_CORPORATION.ADMIN.MEMBERS.DESCRIPTION.HELP
                                 .image:
                                     type: filepicker
                                     preview_images: true
@@ -37,5 +42,6 @@ form:
                                         - .png
                                         - .jpg
                                         - .gif
+                                        - .svg
                                     label: THEME_X_CORPORATION.ADMIN.MEMBERS.IMAGE.LABEL
                                     help: THEME_X_CORPORATION.ADMIN.MEMBERS.IMAGE.HELP

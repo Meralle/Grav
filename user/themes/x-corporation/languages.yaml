@@ -122,6 +122,9 @@ en:
                 ICON:
                     LABEL: FontAwesome Icon
                     HELP: 'Example: fa-line-chart.'
+                IMAGE:
+                    LABEL: Image
+                    HELP: Product image.
             HOWS:
                 HOW_HEADING:
                     LABEL: How Heading

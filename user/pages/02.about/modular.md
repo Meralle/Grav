@@ -1,5 +1,5 @@
 ---
-title: 'ÜBER UNS'
+title: About
 content:
     items: '@self.modular'
     order:

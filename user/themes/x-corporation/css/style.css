@@ -68,7 +68,7 @@ body {
     font-weight : 300;
     font-size   : 16px;
     line-height : 24px;
-    color       : red;
+    color       : #666666;
     background  : #fff;
     }
 
@@ -1196,7 +1196,14 @@ service-icon-style
     font-size: 18px;
     text-transform: capitalize;
     }
-
+    .service-icon-style .promo-image img{
+    overflow: hidden;
+   width:150px;
+    height:150px;
+    border-radius: 50%;
+	border: 10px solid;
+	border-color: white;
+}
 
 /* ---------------------------------
     x-accordion

@@ -34,6 +34,7 @@ form:
                                         - .png
                                         - .jpg
                                         - .gif
+                                        - .svg
                                     label: THEME_X_CORPORATION.ADMIN.SLIDES.BACKGROUND_IMAGE.LABEL
                                     help: THEME_X_CORPORATION.ADMIN.SLIDES.BACKGROUND_IMAGE.HELP
                                 .background_image_description:

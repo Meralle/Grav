@@ -1,8 +1,5 @@
 ---
-title: Dienstleistungen
-menu: Services
-shown_in_footer: true
-background_image: img-page-title.jpg
+title: Services
 content:
     items: '@self.modular'
     order:
@@ -10,4 +7,8 @@ content:
         dir: asc
         custom:
             - _solutions
+menu: Services
+shown_in_footer: true
+background_image: img-page-title.jpg
 ---
+

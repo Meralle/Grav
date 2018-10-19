@@ -5,7 +5,7 @@ services:
         title: Investment
         description: 'Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat tellus odio malesuada ex.'
         url: '#'
-        image: img-offer-1.jpg
+        image: 524413238-1024x1024.jpg
     -
         title: Planning
         description: 'Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat tellus odio malesuada ex.'
@@ -24,6 +24,9 @@ services:
 ---
 
 <!-- ![](/images/circles.png?cropResize=100,100)
-![](/images/logo.svg?cropResize=300,300)
-![](/images/logo.svg?cropResize=300,300)
-<img src="/images/logo.svg" alt="svg picture"> -->
+![](/images/icon-council.svg?cropResize=100,100) -->
+<!-- ![](/images/logo.svg?cropResize=300,300)  -->
+<img src="/user/pages/01.home/_solutions/icon-council.svg" alt="svg picture" width="100">
+<img src="/user/pages/01.home/_solutions/icon-inspection.svg" alt="svg picture" width="100">
+<img src="/user/pages/01.home/_solutions/icon-service.svg" alt="svg picture" width="100">
+<img src="/user/pages/01.home/_solutions/icon-report.svg" alt="svg picture" width="100">

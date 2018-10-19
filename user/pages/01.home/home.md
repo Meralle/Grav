@@ -1,6 +1,5 @@
 ---
-title: X-Corporation
-title: Sample Code With Custom Settings
+title: Home
 menu: Home
 shown_in_footer: true
 content:
@@ -9,12 +8,10 @@ content:
         by: default
         dir: asc
         custom:
-            - _carousel
-            - _services
-            - _features
-            - _team
-            - _testimonials
-            - _clients     
+        - _carousel
+        - _solutions
+        - _services
+        - _features
+        - _clients        
 ---
-
 

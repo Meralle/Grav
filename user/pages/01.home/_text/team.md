@@ -5,8 +5,9 @@ members:
         name: '4545'
         position: erere
         url: erererere
+        description: sdfsdfsdfsdfsdf
         image: img-offer-44.jpg
     -
-        image: logo.svg
+        image: img-offer-44.jpg
 ---
 
