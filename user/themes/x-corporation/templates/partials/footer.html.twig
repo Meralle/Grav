@@ -34,19 +34,50 @@
     </div>
     {% endif %}
 
-    <div class="copyright-section">
-        <div class="container clearfix">
-            <span class="copytext">{{ theme_config.copyright }}</span>
-             <img id="toTop" src="https://png.icons8.com/ultraviolet/30/000000/double-up.png">
-
-            <ul class="list-inline pull-right">
-            {% for page in pages.children.visible %}
-                {% if page.header.shown_in_footer %}
-                {% set activeClass = (page.active) ? 'active' : '' %}
-                <li class="{{ activeClass }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+        <div class="footer-section">
+            <a href="{{ member.url }}">
+                {{ page.media.images[member.image].html('', member.name) }}
+                    <img src="/user/themes/x-corporation/img/logo_solartester.svg" alt="svg picture" width="100">
+            </a>
+                {% if page.header.grayscale %}
+                    {% set image = page.media.images|first.grayscale() %}
+                {% else %}
+                    {% set image = page.media.images|first %}
                 {% endif %}
-            {% endfor %}
-            </ul>
+
+                <div class="modular-row features sideimage pure-g {{ page.header.class }}">
+                    {% if page.header.image_left %}
+                    <div class="pure-u-1-2">
+                        <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
+                    </div>
+                    {% endif %}
+                    <div class="pure-u-1-2">
+                        {{ content }}
+                        {% for button in page.header.buttons %}
+                            <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
+                                {{ button.text }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                    {% if page.header.image_right %}
+                    <div class="pure-u-1-2">
+                        <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
+                    </div>
+                    {% endif %}
+                </div>
         </div>
+        <div class="copyright-section">
+            <div class="container clearfix">
+                <span class="copytext">{{ theme_config.copyright }}</span>
+                <img id="toTop" src="https://png.icons8.com/color/16/000000/double-up.png">
+                <ul class="list-inline pull-right">
+                {% for page in pages.children.visible %}
+                    {% if page.header.shown_in_footer %}
+                    {% set activeClass = (page.active) ? 'active' : '' %}
+                    <li class="{{ activeClass }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+            </div>
     </div>
 </footer>

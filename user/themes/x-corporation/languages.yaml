@@ -160,6 +160,9 @@ en:
                 URL:
                     LABEL: URL
                     HELP: URL of member page.
+                DESCRIPTION:
+                        LABEL: Description
+                        HELP: Description.
                 IMAGE:
                     LABEL: Image
                     HELP: Member's image.

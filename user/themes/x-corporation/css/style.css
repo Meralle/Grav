@@ -1,3 +1,5 @@
+
+
 @font-face {
 font-family: 'Coda';
 font-style: normal;
@@ -62,6 +64,71 @@ url('../fonts/fira-sans-v8-latin-600italic.woff') format('woff'), /* Modern Brow
 url('../fonts/fira-sans-v8-latin-600italic.ttf') format('truetype'), /* Safari, Android, iOS */
 url('../fonts/fira-sans-v8-latin-600italic.svg#FiraSans') format('svg'); /* Legacy iOS */
 }
+
+/* @import "compass/css3";
+
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+body {
+  background: #888;
+  text-align: center;
+}
+
+.chevron {
+  
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+  &:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #000;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    @include transform-origin(50% 50%);
+  }
+  
+  &.left:before { 
+    @include rotate(-135deg);
+    margin: -15px 0 0 -10px;
+  }
+  &.up:before { 
+    @include rotate(-45deg); 
+    margin: -10px 0 0 -15px;
+  }
+  &.down:before { 
+    @include rotate(135deg); 
+    margin: -20px 0 0 -15px;
+  }
+  &.right:before { 
+    @include rotate(45deg); 
+    margin: -15px 0 0 -20px;
+  }
+  
+  &.circle {
+    background: rgba(233,233,180,0.75);
+    border-radius: 50px;
+  }
+  
+  &.debug {
+    outline: 1px solid darkblue;
+
+    &:before {
+      outline: 1px solid red;
+    }
+  }
+}
+     */
 body {
     font-family :'Fira Sans';
     font-style  : normal;
@@ -370,7 +437,8 @@ BACK TO TOP
     -moz-transition    : all 0.3s ease 0s;
     -o-transition      : all 0.3s ease 0s; 
     transition         : all 0.3s ease 0s;
-    }
+   
+}
 
 
 /* ------------------------------------------------------------------
@@ -428,7 +496,9 @@ Shortcode Content
     padding-bottom : 0;
     height         : 40px;
     }
-
+.navbar-brand img {
+    width : 250px;
+}
 .navbar-default .navbar-nav > li {
     margin-right : 17px;
     }
@@ -747,7 +817,7 @@ Shortcode Content
     margin-top  : -25px;
     background  : transparent;
     cursor      : pointer;
-    border      : 2px solid #ffffff;
+    border      : 2px solid #262D30;
     text-shadow : none;
     }
 
@@ -874,7 +944,7 @@ Shortcode Content
 .x-services .thumbnail .caption p {
     margin : 0;
     }
-
+    
 /* --------------------------------------------------
 features start
 -----------------------------------------------------*/
@@ -946,9 +1016,9 @@ Team
         }
     }
 
-.team .thumbnail img {
-    width : 100%;
-    }
+/* .team .thumbnail img {
+    width : 100px;
+    } */
 
 .team .thumbnail .caption {
     padding          : 15px 0;
@@ -968,6 +1038,16 @@ Team
     margin         : 0;
     }
 
+.footer-section{
+    background-color: #F9F9F9;
+    height: 300px;
+}
+
+.footer-section img {
+    margin-left: 300px;
+    margin-top:50px;
+    width: 150px;
+}
 /* --------------------------------------------------
       testimonial start
 -----------------------------------------------------*/
@@ -1198,8 +1278,8 @@ service-icon-style
     }
     .service-icon-style .promo-image img{
     overflow: hidden;
-   width:150px;
-    height:150px;
+    width:110px;
+    height:250px;
     border-radius: 50%;
 	border: 10px solid;
 	border-color: white;

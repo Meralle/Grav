@@ -29,6 +29,7 @@ form:
                                         - .png
                                         - .jpg
                                         - .gif
+                                        - .svg
                                     label: THEME_X_CORPORATION.ADMIN.TESTIMONIALS.IMAGE.LABEL
                                     help: THEME_X_CORPORATION.ADMIN.TESTIMONIALS.IMAGE.HELP
                                 .description:

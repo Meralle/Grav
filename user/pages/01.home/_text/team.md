@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Text
 members:
     -
@@ -9,5 +9,5 @@ members:
         image: img-offer-44.jpg
     -
         image: img-offer-44.jpg
----
+--- -->
 

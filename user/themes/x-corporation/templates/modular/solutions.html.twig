@@ -12,29 +12,62 @@
             {% set column_count = page.header.solutions|length %}
         {% endif %}
     <div class="container text-center">
+    {{ dump(page.header.solutions) }}
         {% for solution in page.header.solutions %}
-        {% if loop.index % column_count == 1 %}
-        <div class="row">
-        {% endif %}
-        <div class="col-sm-6 col-md-{{ (12 / column_count)|round }}">
-            <div class="promo-block-wrapper clearfix">
-                {# <div class="promo-icon">
-                    <i class="fa {{ solution.icon }}"></i>
-                </div> #}
-                <div class="promo-image">
+            {% if loop.index % column_count == 1 %}
+            <div class="row">
+            {% endif %}
+            <div class="col-sm-6 col-md-{{ (12 / column_count)|round }}">
+                <div class="promo-block-wrapper clearfix">
+                    {# <div class="promo-icon">
+                        <i class="fa {{ solution.icon }}"></i>
+                    </div> #}
+                    <div class="promo-image">
                     {{ page.media.images[solution.image].html('',solution.title) }}
-                </div>
-                <div class="promo-content">
-                    <h3>{{ solution.title }}</h3>
+                        <img src="/images/{{solution.image}}" alt="svg picture" width="100">
+                            
+                        {% if page.header.grayscale %}
+                            {% set image = page.media.images|first.grayscale() %}
+                        {% else %}
+                            {% set image = page.media.images|first %}
+                        {% endif %}
 
-                    <p>{{ solution.description }}</p>
-                </div>
-            </div>       
+                        <div class="features sideimage pure-g {{ page.header.class }}">
 
-        </div>
-        {% if loop.index == page.header.solutions|length or loop.index % column_count == 0 %}
-        </div>
-        {% endif %}
+                            {% if page.header.image_left %}
+                            <div class="pure-u-1-2">
+                                <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
+                            </div>
+                            {% endif %}
+                            <div class="pure-u-1-2">
+                                {{ content }}
+                                {% for button in page.header.buttons %}
+                                    <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
+                                        {{ button.text }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+
+                            {% if page.header.image_right %}
+                            <div class="pure-u-1-2">
+                                <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
+                                
+                            </div>
+                            {% endif %}
+
+                        </div>
+                    </div>
+                    <div class="promo-content">
+                        <h3>{{ solution.title }}</h3>
+
+                        <p>{{ solution.description }}</p>
+                    </div>
+                </div>       
+
+            </div>
+            {% if loop.index == page.header.solutions|length or loop.index % column_count == 0 %}
+            </div>
+            {% endif %}
         {% endfor %}
     </div>
     {% endif %}
@@ -73,9 +106,9 @@
             </div>
 
             {% if page.header.hows|length > 0 and page.header.whys|length > 0 %}
-            <div class="col-md-6 col-sm-12 tabWhy">
+                <div class="col-md-6 col-sm-12 tabWhy">
             {% elseif page.header.hows|length == 0 and page.header.whys|length > 0 %}
-            <div class="col-md-12 col-sm-12 tabWhy">
+                 <div class="col-md-12 col-sm-12 tabWhy">
             {% endif %}
                 <h3>{{ page.header.why_heading }}</h3>
                 <div role="tabpanel">

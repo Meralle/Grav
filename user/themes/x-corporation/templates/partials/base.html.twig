@@ -32,6 +32,7 @@
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
     <head>
         {% include 'partials/head.html.twig' %}
+           
     </head>
     <body>
     <a name="top" id="top"></a>
@@ -45,6 +46,7 @@
             <div class="uc-mobile-menu-pusher">
                 <div class="content-wrapper">
                     {% include 'partials/navbar.html.twig' %}
+                 
 
                     {% block content %}{% endblock %}
                 </div>
