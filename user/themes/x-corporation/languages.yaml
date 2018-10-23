@@ -9,7 +9,7 @@ en:
                 HELP: Image used as site's logo
             COPYRIGHT_TEXT:
                 LABEL: Copyright Text
-                HELP: Text or HTML code
+                HELP: Text or HTML 
             GOOGLE_MAPS_API_KEY:
                 LABEL: Google Maps API Key
                 HELP: Get your Google Maps API key at https://console.developers.google.com/
@@ -91,6 +91,9 @@ en:
                 HELP: Google Maps API key.
             SERVICES:
                 LABEL: Services
+                DATE:
+                    LABEL: Date
+                    HELP: Service's date.
                 TITLE:
                     LABEL: Title
                     HELP: Service's title.

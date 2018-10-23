@@ -67,17 +67,17 @@
                 </div>
         </div>
         <div class="copyright-section">
-            <div class="container clearfix">
-                <span class="copytext">{{ theme_config.copyright }}</span>
-                <img id="toTop" src="https://png.icons8.com/color/16/000000/double-up.png">
-                <ul class="list-inline pull-right">
-                {% for page in pages.children.visible %}
-                    {% if page.header.shown_in_footer %}
-                    {% set activeClass = (page.active) ? 'active' : '' %}
-                    <li class="{{ activeClass }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
-                    {% endif %}
-                {% endfor %}
-                </ul>
-            </div>
+        <div class="container clearfix">
+            <span class="copytext">{{ theme_config.copyright }}</span>
+             <img id="toTop" src="https://png.icons8.com/color/16/000000/double-up.png">
+            <ul class="list-inline pull-right">
+            {% for page in pages.children.visible %}
+                {% if page.header.shown_in_footer %}
+                {% set activeClass = (page.active) ? 'active' : '' %}
+                <li class="{{ activeClass }}"><a href="{{ page.url }}">{{ page.menu }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
     </div>
 </footer>

@@ -18,6 +18,12 @@ form:
                             style: vertical
                             label: THEME_X_CORPORATION.ADMIN.SERVICES.LABEL
                             fields:
+                                .date:
+                                    type: date
+                                    validate.min: "2014-01-01"
+                                    validate.max: "2018-12-312"
+                                    label: THEME_X_CORPORATION.ADMIN.SERVICES.DATE.LABEL
+                                    help: THEME_X_CORPORATION.ADMIN.SERVICES.DATE.HELP
                                 .title:
                                     type: text
                                     label: THEME_X_CORPORATION.ADMIN.SERVICES.TITLE.LABEL

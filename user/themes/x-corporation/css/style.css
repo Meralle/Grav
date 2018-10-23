@@ -916,13 +916,13 @@ Shortcode Content
 
 @media (max-width : 767px) {
     .x-services .thumbnail a > img,
-    .x-services .thumbnail > img {
+    .x-services .thumbnail {
         width : 100%;
         }
     }
 
 .x-services .thumbnail .caption {
-    padding  : 30px;
+
     color    : #666666;
     overflow : hidden;
     }
@@ -944,7 +944,8 @@ Shortcode Content
 .x-services .thumbnail .caption p {
     margin : 0;
     }
-    
+
+
 /* --------------------------------------------------
 features start
 -----------------------------------------------------*/
@@ -1038,16 +1039,19 @@ Team
     margin         : 0;
     }
 
-.footer-section{
+.footer-section {
     background-color: #F9F9F9;
-    height: 300px;
+    height         : 300px;
 }
 
 .footer-section img {
-    margin-left: 300px;
-    margin-top:50px;
-    width: 150px;
+    margin-left : 300px;
+    margin-top  :50px;
+    width       : 150px;
 }
+/* .service-section img {
+    width:30px;
+} */
 /* --------------------------------------------------
       testimonial start
 -----------------------------------------------------*/
