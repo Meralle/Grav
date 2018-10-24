@@ -6,6 +6,7 @@ content:
         by: default
         dir: asc
 menu: Gutachten
+visible: false
 body_classes: modular
 shown_in_footer: true
 ---

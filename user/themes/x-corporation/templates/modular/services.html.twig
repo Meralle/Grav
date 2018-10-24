@@ -24,13 +24,12 @@
                             {% else %}
                                 {% set image = page.media.images|first %}
                             {% endif %}
-
                             <div class="modular-row features sideimage pure-g {{ page.header.class }}">
-                                {% if page.header.image_left %}
-                                <div class="pure-u-1-2">
-                                    <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                                </div>
-                                {% endif %}
+                                    {% if page.header.image_left %}
+                                    <div class="pure-u-1-2">
+                                        <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
+                                    </div>
+                                    {% endif %}
                                 <div class="pure-u-1-2">
                                     {{ content }}
                                     {% for button in page.header.buttons %}
@@ -45,7 +44,6 @@
                                 </div>
                                     {% endif %}
                             </div>
-
                     <div class="caption">
                         <p>{{ service.date }}</p>
                         <h3><a href="{{ service.url }}">{{ service.title }}</a></h3>

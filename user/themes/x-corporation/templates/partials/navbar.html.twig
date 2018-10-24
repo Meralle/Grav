@@ -6,7 +6,6 @@
             <li class="dropdown m-menu-fw {{ current_page }}">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">{{ p.menu }}
                 <span><i class="fa fa-angle-down"></i></span></a>
-
                     {% if p.children.visible.count > 0 %}
                     <ul class="dropdown-menu">
                     {% for dropdownHeader in p.children.visible %}
@@ -47,7 +46,7 @@
             </button>
             {% if logo != '' %}
             <a class="navbar-brand" href="{{ base_url == '' ? '/' : base_url }}">
-                <img src="/user/themes/x-corporation/img/logo_solartester.svg" alt="svg picture">
+                <img src="images/logo_solartester.svg" alt="svg picture">
             </a>
             {% endif %}
             {% if page.header.grayscale %}
