@@ -1581,8 +1581,14 @@ service-icon-style
     width : 180px;
 }
 
-.footer-text{
-    color: #2F3F94;
+.footer-text {
+    color : #2F3F94;
+}
+
+.footer-about {
+    color : #2F3F94;
+    font-weight :bold;
+
 }
 /* ---------------------------------------------- /*
  * Preloader
