@@ -19,12 +19,9 @@
             {% endif %}
             <div class="col-sm-6 col-md-{{ (12 / column_count)|round }}">
                 <div class="promo-block-wrapper clearfix">
-                    {# <div class="promo-icon">
-                        <i class="fa {{ solution.icon }}"></i>
-                    </div> #}
                     <div class="promo-image">
-                    {{ page.media.images[solution.image].html('',solution.title) }}
-                        <img src="/images/{{solution.image}}" alt="svg picture" width="100">
+                        {{ page.media.images[solution.image].html('',solution.title) }}
+                            <img src="/images/{{solution.image}}" alt="svg picture" width="100">
                             
                         {% if page.header.grayscale %}
                             {% set image = page.media.images|first.grayscale() %}
@@ -39,8 +36,10 @@
                                 <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
                             </div>
                             {% endif %}
+
                             <div class="pure-u-1-2">
                                 {{ content }}
+
                                 {% for button in page.header.buttons %}
                                     <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
                                         {{ button.text }}

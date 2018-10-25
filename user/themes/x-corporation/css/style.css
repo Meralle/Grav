@@ -63,35 +63,6 @@ url('../fonts/fira-sans-v8-latin-600italic.ttf') format('truetype'), /* Safari, 
 url('../fonts/fira-sans-v8-latin-600italic.svg#FiraSans') format('svg'); /* Legacy iOS */
 }
 
-.chevron:before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  top: 75%;
-  left: 90%;
-  border-style: solid;
-  border-color: #2F3F94;
-  border-width: 2px 2px 0 0;
-  position: absolute;
-  -moz-transform-origin: 50% 50% 50%;
-  -ms-transform-origin: 50% 50% 50%;
-  -webkit-transform-origin: 50% 50% 50%;
-  transform-origin: 50% 50% 50%;
-}
-
-.chevron.up:before {
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  margin: -10px 0 0 -15px;
-}
-
-.chevron.up:hover, .chevron.up:hover:before{
-    border-color:#F49921;
-}
-
 body {
     font-family :'Fira Sans';
     font-style  : normal;
@@ -400,6 +371,63 @@ BACK TO TOP
     -o-transition      : all 0.3s ease 0s; 
     transition         : all 0.3s ease 0s; 
 }
+
+.chevron:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 75%;
+    left: 90%;
+    border-style: solid;
+    border-color: #2F3F94;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    -moz-transform-origin: 50% 50% 50%;
+    -ms-transform-origin: 50% 50% 50%;
+    -webkit-transform-origin: 50% 50% 50%;
+    transform-origin: 50% 50% 50%;
+    }
+  
+.chevron.up:before {
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    margin: -10px 0 0 -15px;
+    }
+
+.chevron.right:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -15px 0 0 -20px;
+    }
+
+.chevron.left:before {
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin: -15px 0 0 -10px;
+    }
+
+.chevron.up:hover, .chevron.up:hover:before{
+    border-color  : #F49921;
+    }
+
+.chevron.right:before {
+    border-color :white;
+    top          : 72%;
+    left         : 78%;
+    }
+
+.chevron.left:before {
+    border-color :white;
+    top          : 72%;
+    left         : 68%;
+    }
 
 /* ------------------------------------------------------------------
 Shortcode Content
@@ -777,7 +805,7 @@ Shortcode Content
     margin-top  : -25px;
     background  : transparent;
     cursor      : pointer;
-    border      : 2px solid #262D30;
+    border      : 2px solid #ffffff;
     text-shadow : none;
     }
 
@@ -903,6 +931,29 @@ Shortcode Content
 .x-services .thumbnail .caption p {
     margin : 0;
     }
+
+.date img {
+    width        : 20px;
+    margin-left  : 20px; 
+    }
+    
+.category img {
+    width       : 20px;
+    margin-left : 90px; 
+    }
+    
+/* .type{
+    color       :red;
+    padding-left : 20px;
+    font-size    : 14px;
+    }
+
+.text {
+    color        : blue;
+    padding-left : 150px;
+    font-size    : 12px;
+    } */
+      
 
 
 /* --------------------------------------------------
@@ -1579,17 +1630,32 @@ service-icon-style
 
 .footer-brand img {
     width : 180px;
-}
+    }
 
 .footer-text {
-    color : #2F3F94;
-}
+    color        : #2F3F94;
+    margin-top   : 40px;
+    }
 
 .footer-about {
     color : #2F3F94;
-    font-weight :bold;
+    font-weight : bold;
+    margin-top  : 50px;
+    }
 
-}
+.footer a {
+    color       : #2F3F94;
+    font-weight :600;
+    }
+
+.footer a:hover {
+    color        : #31aae2;    
+    }
+
+.about-text {
+    background-color  : #F9F9F9;  
+    min-height        : 250px; 
+    }
 /* ---------------------------------------------- /*
  * Preloader
 /* ---------------------------------------------- */

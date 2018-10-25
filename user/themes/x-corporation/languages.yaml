@@ -1,6 +1,9 @@
 en:
     THEME_X_CORPORATION:
         ADMIN:
+            TITLE:
+                LABEL: Title
+                HELP: Block title.
             CONTENT:
                 LABEL: Content
                 HELP: Text or HTML code.
@@ -97,6 +100,9 @@ en:
                 TITLE:
                     LABEL: Title
                     HELP: Service's title.
+                POSITION:
+                    LABEL: position
+                    HELP: Service's position.
                 DESCRIPTION:
                     LABEL: Description
                     HELP: Service's description.

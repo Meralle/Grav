@@ -3,28 +3,32 @@ title: 'What We Offer'
 services:
     -
         date: '2018-10-23'
+        position: Photovoltaik
         title: Investment
-        description: "Ein erheblicher Schaden kann entstehen wenn ein Blitz einschlägt. Setzen Sie auf Blitzschutz.\r\näußerlichem Blitzschutz fange den Blitz ein"
+        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s stand'
         url: '#'
         image: 524413238-1024x1024.jpg
     -
         date: '2018-10-15'
+        position: Photovoltaik
         title: Planning
-        description: 'äußerlichem Blitzschutz fange den Blitz ein und leite ihn ins Erdreich'
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
         url: '#'
         image: img-offer-4.jpg
     -
         date: '2018-11-14'
+        position: Elektrotechnik
         title: Analysis
-        description: 'Ein Schutz kann Überspannungsschäden und Kabelbrände verhindern'
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
         url: '#'
         image: img-offer-3.jpg
     -
         date: '2018-10-15'
+        position: Blitzschutz
         title: Banking
-        description: "innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt\r\n Blitzschutz besteht in der Regel aus mehreren Einzelkomponenten"
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
         url: '#'
-        image: boat-daylight-golden-sunset-1481096.jpg
+        image: 524413238-1024x1024.jpg
 ---
 
 <!-- ![](/images/logo.svg?cropResize=100,100)

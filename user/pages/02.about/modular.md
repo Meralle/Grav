@@ -1,5 +1,5 @@
 ---
-title: 'About Us'
+title: 'Über uns'
 content:
     items: '@self.modular'
     order:
@@ -13,7 +13,7 @@ content:
 taxonomy:
     category:
         - site
-menu: About
+menu: 'Über uns'
 shown_in_footer: true
 background_image: img-page-title.jpg
 ---

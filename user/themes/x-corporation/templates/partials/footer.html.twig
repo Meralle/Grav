@@ -37,8 +37,9 @@
                 {% else %}
                     {% set image = page.media.images|first %}
                 {% endif %}
+
                 <div class="modular-row features sideimage pure-g {{ page.header.class }}"> 
-                    <section class="about-text ptb-100">
+                    <section class="about-text">
                             <div class="container text-center">
                               <div class="col-md-4 footer-about">
                                 <a class="footer-brand" href="{{block.url }}">
@@ -47,8 +48,8 @@
                                  </a>
                                     <h2>{{  block.title }}</h2>
                                     <p>{{ block.content }}</p> 
-                                   Ihr Fachberieb für Blizschutz,</br>
-                                   Electotechnik und Photovoltaik.
+                                   Ihr Fachbetrieb für Blizschutz,</br>
+                                   Elecktrotechnik und Photovoltaik.
                                 </div>
                                 <div class="col-md-4 footer-text">
                                     <h2>{{  block.title }}</h2>
@@ -64,7 +65,7 @@
                                     Altes Dorf 19, 14776 Brandenburg</br>
                                     Tel: 03381 - 30 63 955</br>
                                     Fax: 03381 - 30 63 954</br>
-                                    E-Mail: info@solartester.de
+                                    E-Mail: <a href="mailto:info@solartester.de">info@solartester.de</a>
                                 </div>
                             </div>
                     </section>

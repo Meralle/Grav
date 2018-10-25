@@ -66,11 +66,11 @@
                 <div class="pure-u-1-2">
                     {{ content }}
 
-                    {% for button in page.header.buttons %}
-                        <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
-                            {{ button.text }}
-                        </a>
-                    {% endfor %}
+                {% for button in page.header.buttons %}
+                    <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
+                        {{ button.text }}
+                    </a>
+                {% endfor %}
                 </div>
 
                 {% if page.header.image_right %}
