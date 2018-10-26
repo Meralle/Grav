@@ -3,7 +3,7 @@ en:
         ADMIN:
             TITLE:
                 LABEL: Title
-                HELP: Block title.
+                HELP: Text or HTML code.
             CONTENT:
                 LABEL: Content
                 HELP: Text or HTML code.

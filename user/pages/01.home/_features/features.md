@@ -1,4 +1,4 @@
----
+<!-- ---
 title: 'Our Capabilities'
 image: img-about.png
 features:
@@ -14,5 +14,5 @@ features:
         title: 'Seamlessly grow wireless human capital before turnkey'
         icon: fa-calculator
         description: 'Lorem ipsum dolor sit consectetuer adipiscing elit nonummy ib uismod tincidunt ut laoreet<br>dolore magna aliquam erat volutpat.'
----
+--- -->
 

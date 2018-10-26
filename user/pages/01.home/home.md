@@ -13,7 +13,6 @@ content:
             - _carousel
             - _solutions
             - _services
-            - _features
             - _clients
 ---
 

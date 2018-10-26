@@ -39,3 +39,11 @@ services:
 <img src="/user/pages/01.home/_solutions/icon-report.svg" alt="svg picture" width="100">
 <img src="/user/pages/01.home/_solutions/icon-service.svg" alt="svg picture" width="100">
 <img src="/user/pages/01.home/_solutions/logo_solartester.svg" alt="svg picture" width="100"> -->
+
+
+
+
+
+
+
+

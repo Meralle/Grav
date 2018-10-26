@@ -66,7 +66,7 @@ url('../fonts/fira-sans-v8-latin-600italic.svg#FiraSans') format('svg'); /* Lega
 body {
     font-family :'Fira Sans';
     font-style  : normal;
-    font-weight : 300;
+    font-weight : 400;
     font-size   : 16px;
     line-height : 24px;
     color       : #666666;
@@ -420,13 +420,38 @@ BACK TO TOP
 .chevron.right:before {
     border-color :white;
     top          : 72%;
-    left         : 78%;
+    left         : 78%; 
+    }
+
+.chevron-services.right:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    top: 70%;
+    left: 90%;
+    border-style: solid;
+    border-color: #2F3F94;
+    border-width: 2px 2px 0 0;
+    position: absolute;
+    -moz-transform-origin: 50% 50% 50%;
+    -ms-transform-origin: 50% 50% 50%;
+    -webkit-transform-origin: 50% 50% 50%;
+    transform-origin: 50% 50% 50%;
+    }
+
+.chevron-services.right:before {
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -15px 0 0 -20px;
     }
 
 .chevron.left:before {
-    border-color :white;
-    top          : 72%;
-    left         : 68%;
+    border-color  :white;
+    top           : 72%;
+    left          : 68%;
     }
 
 /* ------------------------------------------------------------------
@@ -932,6 +957,16 @@ Shortcode Content
     margin : 0;
     }
 
+.service-button {
+        border      : 2px solid #2F3F94;
+        width       : 200px;
+        min-height  : 50px;
+        margin-left : 480px;
+    }
+.service-button a {
+        color       : #2F3F94;
+    }
+
 .date img {
     width        : 20px;
     margin-left  : 20px; 
@@ -959,10 +994,10 @@ Shortcode Content
 /* --------------------------------------------------
 features start
 -----------------------------------------------------*/
-.x-features {
+/* .x-features {
     background : #4d7ecc;
     padding    : 100px 0 85px;
-    }
+    } */
 
 .x-features .section-title h2 {
     color : #ffffff;
