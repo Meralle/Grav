@@ -2,8 +2,8 @@
 title: Home
 media_order: 'logo_solartester.svg,logo-client-2.jpg,img.jpg'
 menu: Startsite
-shown_in_footer: true
 visible: false
+shown_in_footer: true
 content:
     items: '@self.modular'
     order:

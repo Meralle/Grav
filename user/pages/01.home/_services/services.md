@@ -5,7 +5,7 @@ services:
         date: '2018-10-23'
         position: Photovoltaik
         title: Investment
-        description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry''s stand'
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
         url: '#'
         image: 524413238-1024x1024.jpg
     -
@@ -16,19 +16,17 @@ services:
         url: '#'
         image: img-offer-4.jpg
     -
-        date: '2018-11-14'
-        position: Elektrotechnik
-        title: Analysis
-        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
-        url: '#'
-        image: img-offer-3.jpg
-    -
-        date: '2018-10-15'
-        position: Blitzschutz
+        date: '2018-10-02'
+        position: analysis
         title: Banking
         description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
-        url: '#'
-        image: 524413238-1024x1024.jpg
+        image: img-offer-2.jpg
+    -
+        date: '2018-10-17'
+        position: Elektrotechnik
+        title: analysis
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
+        image: img-offer-2.jpg
 ---
 
 <!-- ![](/images/logo.svg?cropResize=100,100)

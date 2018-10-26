@@ -66,7 +66,7 @@ url('../fonts/fira-sans-v8-latin-600italic.svg#FiraSans') format('svg'); /* Lega
 body {
     font-family :'Fira Sans';
     font-style  : normal;
-    font-weight : 400;
+    font-weight : 500;
     font-size   : 16px;
     line-height : 24px;
     color       : #666666;
@@ -963,33 +963,35 @@ Shortcode Content
         min-height  : 50px;
         margin-left : 480px;
     }
+
 .service-button a {
         color       : #2F3F94;
+        margin-left : 20px;
     }
 
-.date img {
-    width        : 20px;
-    margin-left  : 20px; 
-    }
-    
-.category img {
+.calendar {
+    width : 20px;
+    float : left;
+    } 
+
+.category {
     width       : 20px;
-    margin-left : 90px; 
-    }
-    
-/* .type{
-    color       :red;
-    padding-left : 20px;
-    font-size    : 14px;
+    margin-left : 50px;
+    /* float: right; */ 
     }
 
 .text {
-    color        : blue;
-    padding-left : 150px;
-    font-size    : 12px;
-    } */
-      
+    color     : #666666;
+    float     : right;
+    font-size : 12px; 
+    }   
 
+.date {
+    color        : #666666;
+    float        : left;
+    font-size    : 12px;
+    padding-left : 10px;
+    }
 
 /* --------------------------------------------------
 features start
