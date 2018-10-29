@@ -964,33 +964,35 @@ Shortcode Content
         margin-left : 480px;
     }
 
-.service-button a {
-        color       : #2F3F94;
-        margin-left : 20px;
+.service-button p {
+        color        : #2F3F94;
+        margin-left  : 20px;
+        margin-top   : 10px;
     }
 
-.calendar {
-    width : 20px;
-    float : left;
-    } 
 
-.category {
-    width       : 20px;
-    margin-left : 50px;
-    /* float: right; */ 
+.flex-container {
+        display         : flex;
+        flex-direction  : row;
+        justify-content : space-around;
     }
 
-.text {
-    color     : #666666;
-    float     : right;
-    font-size : 12px; 
-    }   
+.flex-container img {
+        width        : 18px; 
+        margin-right : 12px; 
+    }
 
-.date {
-    color        : #666666;
-    float        : left;
-    font-size    : 12px;
-    padding-left : 10px;
+.flex-item1  {
+        display       : flex;
+        align-items   : center; 
+        font-size     : 10px;
+         margin-right : 50px;
+    }
+
+.flex-item2  {
+        display       :flex;
+        align-items   : center; 
+        font-size     : 12px;
     }
 
 /* --------------------------------------------------
@@ -1686,10 +1688,10 @@ service-icon-style
     }
 
 .footer a:hover {
-    color        : #31aae2;    
+    color        : #F49921;    
     }
 
-.about-text {
+.footer-container {
     background-color  : #F9F9F9;  
     min-height        : 250px; 
     }

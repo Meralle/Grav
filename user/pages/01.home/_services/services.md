@@ -22,11 +22,11 @@ services:
         description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
         image: img-offer-2.jpg
     -
-        date: '2018-10-17'
+        date: '2018-10-26'
         position: Elektrotechnik
-        title: analysis
-        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
-        image: img-offer-2.jpg
+        title: Blitzschutz
+        description: Photovoltaik
+        image: boat-daylight-golden-sunset-1481096.jpg
 ---
 
 <!-- ![](/images/logo.svg?cropResize=100,100)
