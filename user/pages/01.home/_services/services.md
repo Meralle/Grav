@@ -27,6 +27,12 @@ services:
         title: Blitzschutz
         description: Photovoltaik
         image: boat-daylight-golden-sunset-1481096.jpg
+    -
+        date: '2018-10-26'
+        position: Photovoltaik
+        title: Banking
+        description: 'innerem Blitzschutz sorgt dafür, dass er nicht zu gefährlichen Spannungsunterschieden im Gebäude kommt'
+        image: img-offer-4.jpg
 ---
 
 <!-- ![](/images/logo.svg?cropResize=100,100)
