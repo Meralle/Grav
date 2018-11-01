@@ -1,4 +1,4 @@
-{% extends 'partials/base.html.twig' %}
+{% extends 'partials/projects.html.twig' %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {# revise checks for Blog list page options - hibbittsdesign.org #}
@@ -63,7 +63,7 @@
                     {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
                   {% endif %}
                 {% endfor %}
-
+                {% for page in page.collection %}
                 </div>
 
                 {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
@@ -96,8 +96,6 @@
     </section>
     <script>
         //Bricklayer
-        {% if ((page.header.bricklayer_layout is not defined) or (page.header.bricklayer_layout)) %}
-          var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
-        {% endif %}
+       
     </script>
 {% endblock %}
