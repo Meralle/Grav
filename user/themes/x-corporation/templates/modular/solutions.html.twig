@@ -21,7 +21,7 @@
                 <div class="promo-block-wrapper clearfix">
                     <div class="promo-image">
                         {{ page.media.images[solution.image].html('',solution.title) }}
-                            <img src="/images/{{solution.image}}" alt="svg picture" width="100">
+                            <img src="/images/{{ solution.image }}" alt="svg picture" width="100">
                       
                         {% if page.header.grayscale %}
                             {% set image = page.media.images|first.grayscale() %}

@@ -1,5 +1,12 @@
 ---
 title: projekts
+taxonomy:
+    category:
+        - blog
+    tag:
+        - city
+        - night
+        - photography
 services:
     -
         date: '2018-10-17'
@@ -12,7 +19,7 @@ services:
         position: Photovoltaik
         title: Analysis
         description: "What is Lorem Ipsum?\r\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-        image: img-offer-3.jpg
+        image: boat-daylight-golden-sunset-1481096.jpg
     -
         date: '2018-10-12'
         position: Blitzschutz
