@@ -1675,14 +1675,15 @@ service-icon-style
     }
 
 .footer-about {
-    color : #2F3F94;
+    color       : #2F3F94;
     font-weight : bold;
     margin-top  : 50px;
     }
 
 .footer a {
     color       : #2F3F94;
-    font-weight :600;
+    font-weight : 600;
+    font-size   : 14px;
     }
 
 .footer a:hover {

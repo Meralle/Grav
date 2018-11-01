@@ -7,6 +7,7 @@ taxonomy:
         - city
         - night
         - photography
+hide_git_sync_repo_link: false
 services:
     -
         date: '2018-10-17'
