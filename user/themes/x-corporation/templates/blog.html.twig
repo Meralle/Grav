@@ -1,4 +1,4 @@
-{% extends 'partials/projects.html.twig' %}
+{% extends 'partials/projekts-base.html.twig' %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {# revise checks for Blog list page options - hibbittsdesign.org #}
@@ -65,7 +65,7 @@
                 {% endfor %}
                 {% for page in page.collection %}
                 </div>
-
+        
                 {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
                     <div id="listing-footer">
                         {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}

@@ -8,7 +8,7 @@
     </div>
 </section>
 
-<section class="ptb-100">
+<section class="">
     <div class="container">
         <div class="row">
             {{ content }}
@@ -17,7 +17,7 @@
 </section>
 
 <div class="container">
-    {# this part from blog.html.twig #}
+{# this part from blog.html.twig #}
     {% embed 'partials/layout.html.twig' with {blog: page} %}
         {% block item %}
             {% for child in collection %}
@@ -34,11 +34,11 @@
         {% endif %}
             <div class="col-md-6"> 
                 <div class="thumbnail clearfix">
-                    <a class="service-section" href="{{ service.url }}">
-                        {{ page.media.images[service.image].lightbox(1000,1000).cropZoom(300, 250).html('', service.title) }}  
-                        {# <a href="{{page.url }}">{{ service.image.cropZoom(300,300).html }}</a> #}
+                    <a class="service-section" href="{{page.url }}">
+                        {{ page.media.images[service.image].cropZoom(300, 250).html }}
+                         {# <a href="{{page.url }}">{{ service.image.cropZoom(300,300).html }}</a> #}
+       
                     </a>
-
                     {% if page.header.grayscale %}
                         {% set image = page.media.images|first.grayscale() %}
                     {% else %}
@@ -49,24 +49,26 @@
                         {% if page.header.image_left %}
                         <div class="pure-u-1-2">
                             <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                            <img src="/images/{{ solution.image }}" alt="svg picture" width="100">
                         </div>
                         {% endif %}
                         
-                            <div class="pure-u-1-2">
-                            {% for button in page.header.buttons %}
+                         <div class="pure-u-1-2">
+                            {{ content }}
+
+                             {% for button in page.header.buttons %}
                                 <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
                                     {{ button.text }}
                                 </a>
                             {% endfor %}
                                 </div>
                             {% if page.header.image_right %}
-                                <div class="pure-u-1-2">
+                            <div class="pure-u-1-2">
                                     <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                                </div>
+                            </div>
                             {% endif %}
-                    </div>
 
+                        </div>
+                        
                     <div class="caption">
                         <div class="flex-container">      
                             <div class="flex-item1"><img src="/images/icon-calendar.svg" alt="svg picture">         
@@ -80,16 +82,12 @@
                         <p>{{ service.description }}</p>
                     </div>
                 </div>
-        </div>
+            </div>
         {% if loop.index == page.header.services.count or loop.index % 2 == 0 %}
-</div>
+        </div>
         {% endif %}
     {% endfor %}
-        <a href="http://localhost/projekte"><div class="col-md-12 service-button chevron-services right">
-                <p>{{ service.content }} witere Projekte</p>
-        </div></a>
-</div>
+    </div>
 </section>
+
 {% endblock %}
-
-

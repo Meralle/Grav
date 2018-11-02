@@ -1,4 +1,4 @@
-{% extends 'partials/projects.html.twig' %}
+{% extends 'partials/projekts-base.html.twig' %}
 {% set blog = page.find(theme_var('blog-page')|default('/blog')) %}
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog]) %}
 {% set show_sidebar = header_var('show_sidebar', [page, blog])  %}
@@ -11,8 +11,6 @@
         {% set content %}
             <h1>{{ page.title }}</h1>
             <h2>{{ page.header.subtitle }}</h2>
-           
-           
         {% endset %}
        
 

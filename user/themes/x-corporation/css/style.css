@@ -970,7 +970,6 @@ Shortcode Content
         margin-top   : 10px;
     }
 
-
 .flex-container {
         display       : flex;
     }
@@ -1730,4 +1729,67 @@ service-icon-style
 
 
 
+/* --------------------------------------------
+   projekts
+----------------------------------------------- */
 
+.flex-card-container {
+    display     : flex;
+    flex-wrap   : nowrap;
+    }
+
+.card-content {
+    margin-left : 10px;  
+    /* width       : 400px; */
+    line-height : 24px;
+    }
+
+.card-thumbnail {
+    padding          : 0;
+    border           : 1px solid #f1f1f1;
+    background-color : #fff;
+    width            : 600px;
+    }
+    
+.card-title a {
+    color : #2F3F94;
+    }
+
+.flex-svg-container {
+    display : flex;
+    }
+
+.flex-svg-container img {
+    width        : 18px; 
+    margin-right : 10px; 
+}
+
+.flex-category {
+    display      : flex;
+    align-items  : center; 
+    font-size    : 12px;
+    margin-left: 50px;
+    }
+
+.flex-calender {
+    display      : flex;
+    align-items  : center; 
+    font-size    : 12px;
+    margin-right : 50px;
+    }
+
+.flex-calender p {
+    margin-top   : 10px;
+    }
+
+.flex-category p {
+    margin-top   : 10px;
+    }
+
+
+.container {
+    display grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 150px 150px;
+    grid-gap: 10px;
+}
