@@ -15,6 +15,6 @@ taxonomy:
         - site
 menu: 'Über uns'
 shown_in_footer: true
-background_image: img-page-title.jpg
+background_image: img-offer-4.jpg
 ---
 

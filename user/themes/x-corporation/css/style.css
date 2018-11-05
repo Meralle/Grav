@@ -123,7 +123,7 @@ b, strong {
 LINK STYLE
 ------------------------------------------*/
 a {
-    color              : #31aae2;
+    color              : #2F3F94;
     text-decoration    : none;
     -webkit-transition : all 0.3s ease 0s;
     -moz-transition    : all 0.3s ease 0s;
@@ -1732,28 +1732,27 @@ service-icon-style
 /* --------------------------------------------
    projekts
 ----------------------------------------------- */
-
-.flex-card-container {
-    display     : flex;
-    flex-wrap   : nowrap;
-    }
-
-.card-content {
-    margin-left : 10px;  
-    /* width       : 400px; */
-    line-height : 24px;
-    }
-
-.card-thumbnail {
+.card{
+    display          : flex; 
     padding          : 0;
+    line-height      : 24px;
     border           : 1px solid #f1f1f1;
     background-color : #fff;
+    border-radius    : 0;
+    margin-bottom    : 30px;
     width            : 600px;
+   
+     
+}
+.card-content {
+    margin-left : 10px;  
+    /* width    : 400px; */
+    line-height : 24px;
     }
-    
-.card-title a {
-    color : #2F3F94;
-    }
+ 
+/* .card-title a {
+    color   : #2F3F94;
+    } */
 
 .flex-svg-container {
     display : flex;
@@ -1787,9 +1786,10 @@ service-icon-style
     }
 
 
-.container {
-    display grid;
+/* .container {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 150px 150px;
     grid-gap: 10px;
-}
+} */
+

@@ -2,41 +2,69 @@
 {% set collection = page.collection() %}
 {% block content %}
 
+
 <section class="single-page-title">
     <div class="container text-center">
         <h2>{{ page.title }}</h2>
     </div>
 </section>
-
-<section class="ptb-100">
-    <div class="container">
-        <div class="row">
-            {{ content }}
-        </div>
-    </div>
-</section>
-
 <div class="container">
-    {# this part from blog.html.twig #}
-    {% embed 'partials/layout.html.twig' with {blog: page} %}
-        {% block item %}
-            {% for child in collection %}
-                {% if "featured" not in child.taxonomy['tag'] %}
-                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
-                {% endif %}
-            {% endfor %}
-        {% endblock %}
-    {% endembed %}
+    <div class="container text-center">
+        <h2>{{ page.title }}</h2>
+    </div>
+      {# this part from blog-list-item.html.twig #}
+    {% set image = page.media.images|first %}
+      {% if image and ((page.header.header_image is not defined) or (page.header.header_image))  %}
+
+            {# support image credit tag with optional image meta file - hibbittsdesign.org #}
+              {% if page.header.header_image_credit %}
+                {% set image_credit = page.header.header_image_credit %}
+                {% set image_creditlink = page.header.header_image_creditlink %}
+                {% set image_alt_text = page.header.header_image_alt_text %}
+              {% elseif header_image_media.meta.header_image_credit  %}
+                {% set image_credit = header_image_media.meta.header_image_credit %}
+                {% set image_creditlink = header_image_media.meta.header_image_creditlink %}
+                {% set image_alt_text = header_image_media.meta.header_image_alt_text %}
+              {% endif %}
+              {% if image_credit %}
+                <div class="image-credit-wrapper"><span class="image-credit">
+                  {% if image_creditlink %}
+                    Image: <a class="newwindow external-link" href="{{ image_creditlink }}">
+                    {{ image_credit }}</a></span>
+                    <a href="{{ page.url }}">{{ image.cropZoom(1400,400).html }}</a>
+                  {% else %}
+                    Image: {{ image_credit }}</span>
+                    <a href="{{ page.url }}">{{ image.cropZoom(1400,400).html }}</a>
+                  {% endif %}
+                </div>
+              {% else %}
+                <a href="{{ page.url }}">{{ image.cropZoom(280,280).html }}</a>
+                {# <a href="{{ page.url }}"><img src="/photovoltaik/images/img-offer-2.jpg" alt="svg picture" width="100"></a> #}
+                  
+              {% endif %}
+
+          {% endif %} 
+       
+    {% if page.summary != page.content %}
+            {{ page.summary }}
+            {% if page.header.continue_link is sameas(true) %}
+            <br>
+            <a href="{{ page.url }}" title="{{ page.title }}" class="btn btn-primary">{{ 'BLOG.ITEM.CONTINUE_READING'|t }}</a>
+            {% endif %}
+        {% else %}
+            {{ page.content }}
+    {% endif %}
 
     {% for service in page.header.services %}
         {% if loop.index % 2 == 1 %}
         <div class="row">
         {% endif %}
             <div class="col-md-6"> 
-                <div class="thumbnail clearfix">
-                    <a class="service-section" href="{{ service.url }}">
+                {# <div class="thumbnail clearfix"> #}
+                    {# <a class="service-section" href="{{ service.url }}">
                         {{ page.media.images[service.image].lightbox(1000,1000).cropZoom(300, 250).html('', service.title) }}  
-                        {# <a href="{{page.url }}">{{ service.image.cropZoom(300,300).html }}</a> #}
+                       
+                        
                     </a>
 
                     {% if page.header.grayscale %}
@@ -48,9 +76,9 @@
                     <div class="modular-row features sideimage pure-g {{ page.header.class }}">
                         {% if page.header.image_left %}
                         <div class="pure-u-1-2">
-                            <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                            <img src="/images/{{ solution.image }}" alt="svg picture" width="100">
-                        </div>
+                            <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div> #}
+                            {# <img src="/images/{{ solution.image }}" alt="svg picture" width="100"> #}
+                        {# </div>
                         {% endif %}
                         
                             <div class="pure-u-1-2">
@@ -65,9 +93,9 @@
                                     <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
                                 </div>
                             {% endif %}
-                    </div>
+                    </div> #}
 
-                    <div class="caption">
+                    {# <div class="caption">
                         <div class="flex-container">      
                             <div class="flex-item1"><img src="/images/icon-calendar.svg" alt="svg picture">         
                                 <p >{{ service.date }}</p>
@@ -78,16 +106,14 @@
                         </div>
                         <h3><a href="{{ service.url }}">{{ service.title }}</a></h3>
                         <p>{{ service.description }}</p>
-                    </div>
-                </div>
+                    </div> #}
+                {# </div> #}
         </div>
+        
         {% if loop.index == page.header.services.count or loop.index % 2 == 0 %}
 </div>
         {% endif %}
-    {% endfor %}
-        <a href="http://localhost/projekte"><div class="col-md-12 service-button chevron-services right">
-                <p>{{ service.content }} witere Projekte</p>
-        </div></a>
+    {% endfor %}  
 </div>
 </section>
 {% endblock %}

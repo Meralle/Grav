@@ -20,5 +20,6 @@ feed:
     description: 'Sample Blog Description'
     limit: 10
 pagination: true
+background_image: img-offer-4.jpg
 ---
 

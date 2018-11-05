@@ -32,30 +32,22 @@
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
     <head>
         {% include 'partials/head.html.twig' %}
-           
     </head>
     <body>
-    <h1 class="hidden">{{page.title}}</h1>
-                   
-    <a name="top" id="top"></a>
         <div id="main-wrapper">
             <div id="preloader">
-            
                 <div id="status">
                     <div class="status-mes"></div>
                 </div>
             </div>
-           
 
             <div class="uc-mobile-menu-pusher">
                 <div class="content-wrapper">
                     {% include 'partials/navbar.html.twig' %}
-                 
 
                     {% block content %}{% endblock %}
                 </div>
             </div>
-                
 
             <div class="uc-mobile-menu uc-mobile-menu-effect">
                 <button type="button" class="close" aria-hidden="true" data-toggle="offcanvas"
@@ -75,7 +67,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
 
         {% include 'partials/footer.html.twig' %}
