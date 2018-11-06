@@ -1,4 +1,4 @@
-{% extends 'partials/projekts-base.html.twig' %}
+{% extends 'partials/base.html.twig' %}
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {# revise checks for Blog list page options - hibbittsdesign.org #}
@@ -63,9 +63,9 @@
                     {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
                   {% endif %}
                 {% endfor %}
-                {% for page in page.collection %}
+
                 </div>
-        
+
                 {% if show_pagination and config.plugins.pagination.enabled and collection.params.pagination %}
                     <div id="listing-footer">
                         {% include 'partials/pagination.html.twig' with {base_url: page.url, pagination: collection.params.pagination} %}
@@ -87,7 +87,7 @@
             {# check content display flag - hibbittsdesign.org #}
             {% if not (grav.uri.param('chromeless') or grav.uri.param('embedded')) and not(theme_var('chromeless.enabled')) %}
               {% block sidebar %}
-                  {% include 'partials/sidebar.html.twig' %}
+                  {# {% include 'partials/sidebar.html.twig' %} #}
               {% endblock %}
             {% endif %}
         {% endembed %}
@@ -96,6 +96,8 @@
     </section>
     <script>
         //Bricklayer
-       
+        {% if ((page.header.bricklayer_layout is not defined) or (page.header.bricklayer_layout)) %}
+          var bricklayer = new Bricklayer(document.querySelector('.bricklayer'))
+        {% endif %}
     </script>
 {% endblock %}

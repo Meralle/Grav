@@ -1,5 +1,6 @@
 ---
 title: Kontakt
+media_order: 'img-page-title.jpg,nature1.jpg'
 content:
     items: '@self.modular'
     order:

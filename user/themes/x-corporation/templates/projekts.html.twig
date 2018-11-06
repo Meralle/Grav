@@ -22,6 +22,9 @@
 </section> #}
 
 <div class="container">
+    {# <div class="container text-center">
+        <h2>{{ page.title }}</h2>
+    </div> #}
 {# this part from blog.html.twig #}
     {% embed 'partials/layout.html.twig' with {blog: page} %}
         {% block item %}
@@ -32,66 +35,6 @@
             {% endfor %}
         {% endblock %}
     {% endembed %}
-
-    {% for service in page.header.services %}
-        {% if loop.index % 2 == 1 %}
-        <div class="row">
-        {% endif %}
-            <div class="col-md-6"> 
-                <div class="thumbnail clearfix">
-                    <a class="service-section" href="{{page.url }}">
-                        {{ page.media.images[service.image].cropZoom(300, 250).html }}
-                         {# <a href="{{page.url }}">{{ service.image.cropZoom(300,300).html }}</a> #}
-       
-                    </a>
-                    {% if page.header.grayscale %}
-                        {% set image = page.media.images|first.grayscale() %}
-                    {% else %}
-                        {% set image = page.media.images|first %}
-                    {% endif %}
-
-                    <div class="modular-row features sideimage pure-g {{ page.header.class }}">
-                        {% if page.header.image_left %}
-                        <div class="pure-u-1-2">
-                            <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                        </div>
-                        {% endif %}
-                        
-                         <div class="pure-u-1-2">
-                            {{ content }}
-
-                             {% for button in page.header.buttons %}
-                                <a class="button{% if button.primary %} primary{% endif %}" href="{{ button.url }}">
-                                    {{ button.text }}
-                                </a>
-                            {% endfor %}
-                                </div>
-                            {% if page.header.image_right %}
-                            <div class="pure-u-1-2">
-                                    <div class="{{ page.header.image_type }}" style="background-image: url('{{ image.url }}'); background-size: cover;"></div>
-                            </div>
-                            {% endif %}
-
-                        </div>
-                        
-                    <div class="caption">
-                        <div class="flex-container">      
-                            <div class="flex-item1"><img src="/images/icon-calendar.svg" alt="svg picture">         
-                                <p >{{ service.date }}</p>
-                            </div>   
-                            <div class="flex-item2"><img src="/images/icon-category.svg" alt="svg picture">
-                                <p >{{ service.position }}</p>
-                            </div> 
-                        </div>
-                        <h3><a href="{{ service.url }}">{{ service.title }}</a></h3>
-                        <p>{{ service.description }}</p>
-                    </div>
-                </div>
-            </div>
-        {% if loop.index == page.header.services.count or loop.index % 2 == 0 %}
-        </div>
-        {% endif %}
-    {% endfor %}
     </div>
 </section>
 

@@ -1,4 +1,4 @@
-{% extends 'partials/projekts-base.html.twig' %}
+{% extends 'partials/base.html.twig' %}
 {% set blog = page.find(theme_var('blog-page')|default('/blog')) %}
 {% set show_breadcrumbs = header_var('show_breadcrumbs', [page, blog]) %}
 {% set show_sidebar = header_var('show_sidebar', [page, blog])  %}
@@ -20,7 +20,7 @@
 {% block body %}
 <section id="body-wrapper" class="section blog-listing">
     <section class="container {{ grid_size }}">
-
+    
         {% if show_breadcrumbs and config.plugins.breadcrumbs.enabled %}
             {% include 'partials/breadcrumbs.html.twig' %}
         {% endif %}
@@ -39,7 +39,7 @@
             {# check content display flag - hibbittsdesign.org #}
             {% if not (grav.uri.param('chromeless') or grav.uri.param('embedded')) and not(theme_var('chromeless.enabled')) %}
               {% block sidebar %}
-                  {% include 'partials/sidebar.html.twig' %}
+                  {# {% include 'partials/sidebar.html.twig' %} #}
               {% endblock %}
             {% endif %}
         {% endembed %}
