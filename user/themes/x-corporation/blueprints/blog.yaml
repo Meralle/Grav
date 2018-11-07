@@ -1,6 +1,6 @@
 title: Blog Metadata
 '@extends':
-    type: blog
+    type: default
     context: blueprints://pages
 
 form:

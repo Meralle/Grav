@@ -1,0 +1,29 @@
+{% extends 'partials/base.html.twig' %}
+{% set collection = page.collection() %}
+
+{# this code from blog.html.twig #}
+{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{% if not (grav.uri.param('chromeless') or grav.uri.param('embedded')) and not(theme_var('chromeless.enabled')) %}
+  {% block hero %}
+      {% include 'partials/hero.html.twig' %}
+  {% endblock %}
+{% endif %}
+
+
+{% block content %}
+<div class="container">
+   <div class="container text-center">
+        <h2>{{ page.title }}</h2>
+    </div>
+{# this code from blog.html.twig #}
+    {% embed 'partials/layout.html.twig' with {blog: page} %}
+        {% block item %}
+            {% for child in collection %}
+                {% if "featured" not in child.taxonomy['tag'] %}
+                    {% include 'partials/blog-list-item.html.twig' with {blog: page, page: child} %}
+                {% endif %}
+            {% endfor %}
+        {% endblock %}
+    {% endembed %}
+    </div>
+{% endblock %}

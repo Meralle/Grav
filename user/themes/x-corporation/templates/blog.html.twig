@@ -1,4 +1,5 @@
-{% extends 'partials/base.html.twig' %}
+{% extends 'partials/projects-base.html.twig' %}
+
 {% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
 {% set collection = page.collection() %}
 {# revise checks for Blog list page options - hibbittsdesign.org #}
