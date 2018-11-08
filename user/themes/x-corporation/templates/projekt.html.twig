@@ -2,15 +2,21 @@
 {% set collection = page.collection() %}
 
 {# this code from blog.html.twig #}
-{% set blog_image = page.media.images[page.header.hero_image] ?: page.media.images|first %}
+{# {% set blog_image = page.media_order.images[page.header.media_order] ?: page.media_order.images|first %}
 {% if not (grav.uri.param('chromeless') or grav.uri.param('embedded')) and not(theme_var('chromeless.enabled')) %}
   {% block hero %}
-      {% include 'partials/hero.html.twig' %}
+      {% include 'partials/hero.html.twig'  with {id: 'blog-hero'} %}
   {% endblock %}
-{% endif %}
+{% endif %} #}
 
 
 {% block content %}
+<section class="single-page-title"{{ background_html }}>
+{{ dump(page.header) }}
+    <div class="container text-center">
+        <h2>{{ page.title }}</h2>
+    </div>
+</section>
 <div class="container">
    <div class="container text-center">
         <h2>{{ page.title }}</h2>
@@ -25,5 +31,5 @@
             {% endfor %}
         {% endblock %}
     {% endembed %}
-    </div>
+</div>
 {% endblock %}
